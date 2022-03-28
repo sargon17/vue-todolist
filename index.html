@@ -64,7 +64,10 @@
                     @keyup.enter="readInputValue()">
             </div>
             <div class="notes__add-todos__button-section">
-                <button class="notes__add-todos__button"><img src="./img/add new icon.svg" alt=""></button>
+                <button class="notes__add-todos__button" @click="setInputActive" v-if="!btnActive"><img
+                        src="./img/add new icon.svg" alt=""></button>
+                <button class="notes__add-todos__button notes__add-todos__button--pink" v-if="btnActive"
+                    @click="readInputValue"><img src="./img/add new icon.svg" alt=""></button>
             </div>
 
         </div>

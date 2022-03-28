@@ -89,6 +89,15 @@ body {
   justify-content: center;
 }
 /* ------------------- to do item --------------- */
+.notes__todos-section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  overflow: auto;
+  justify-content: flex-start;
+}
 .notes__todo-item {
   display: flex;
   justify-content: space-between;
@@ -159,6 +168,9 @@ body {
   gap: 8px;
   padding: 20px;
 }
+.notes__add-todos__input-section {
+  width: 100%;
+}
 .notes__add-todos__input {
   width: 100%;
   border-radius: 25px;
@@ -172,12 +184,10 @@ body {
   transition: var(--mt-transition);
   transform: translate(120%, 0);
   transform: scaleX(0);
-}
-/* .notes__add-todos-section:hover .notes__add-todos__input {
   -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-} */
+}
 
 .notes__add-todos__button {
   width: 45px;
@@ -214,7 +224,7 @@ body {
 /* ------------------ / NOTES SECTION ------------------ */
 
 /* Animations */
-/* 
+
 @keyframes scale-up-hor-right {
   0% {
     transform: translate(120%, 0);
@@ -231,6 +241,6 @@ body {
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
   }
-} */
+}
 
 /* / Animations */

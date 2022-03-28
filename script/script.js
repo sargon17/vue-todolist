@@ -25,6 +25,46 @@ let todos = [
     text: "Exercise",
     completed: true,
   },
+  {
+    text: "Order cat food",
+    completed: true,
+  },
+  {
+    text: "Clean kitchen",
+    completed: false,
+  },
+  {
+    text: "Buy food",
+    completed: true,
+  },
+  {
+    text: "Do work",
+    completed: false,
+  },
+  {
+    text: "Exercise",
+    completed: true,
+  },
+  {
+    text: "Order cat food",
+    completed: true,
+  },
+  {
+    text: "Clean kitchen",
+    completed: false,
+  },
+  {
+    text: "Buy food",
+    completed: true,
+  },
+  {
+    text: "Do work",
+    completed: false,
+  },
+  {
+    text: "Exercise",
+    completed: true,
+  },
 ];
 
 // new vue instance
@@ -46,8 +86,10 @@ let todoApp = new Vue({
     },
     readInputValue: function () {
       let value = document.querySelector("#inputNewTodo").value;
-      this.newTodo = value;
-      this.addNewTodo();
+      if (value.length > 0) {
+        this.newTodo = value;
+        this.addNewTodo();
+      }
     },
     addNewTodo: function () {
       this.todos.push({
@@ -55,6 +97,12 @@ let todoApp = new Vue({
         completed: false,
       });
       this.newTodo = "";
+      this.btnActive = false;
+      this.inputActive = false;
+    },
+    setInputActive: function () {
+      this.inputActive = true;
+      this.btnActive = true;
     },
   },
 });
