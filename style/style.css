@@ -163,6 +163,7 @@ body {
   padding: 16px;
   border-bottom: 1px solid var(--mt-clear-yellow);
   cursor: pointer;
+  transition: var(--mt-transition);
 }
 .notes__todo-item:last-child {
   border-bottom: none;
