@@ -7,6 +7,35 @@
   --mt-main-yellow: #e7993b;
   --mt-main-hoover-yellow: #9e5c0d;
   --mt-main-active-yellow: #8a510c;
+  --mt-secondary-pink: #f1afb5;
   --mt-main-text-gray: #484848;
   --mt-main-text-disabled-gray: #949494;
+
+  --mt-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: var(--mt-main-bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: var(--mt-main-text-gray);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.bg-section {
+  width: calc(100% / 12 * 8);
+}
+
+.notes-section {
+  background-color: var(--mt-notepad-bg-color);
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: var(--mt-shadow);
+
+  width: calc(100% / 12 * 4);
+  height: 80vh;
 }
