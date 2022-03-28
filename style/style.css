@@ -1,0 +1,12 @@
+:root {
+  --mt-main-bg-color: #fefdfc;
+  --mt-notepad-bg-color: #fefcfb;
+
+  --mt-clear-yellow: #f3cd9e;
+  --mt-clear-darker-yellow: #eeb876;
+  --mt-main-yellow: #e7993b;
+  --mt-main-hoover-yellow: #9e5c0d;
+  --mt-main-active-yellow: #8a510c;
+  --mt-main-text-gray: #484848;
+  --mt-main-text-disabled-gray: #949494;
+}
