@@ -98,5 +98,3 @@ let bgApp = new Vue({
     },
   },
 });
-
-// move dom element on mouse movement
