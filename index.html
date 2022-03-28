@@ -17,11 +17,21 @@
 </head>
 
 <body>
-    <div class="bg-section"></div>
+    <img src="./img/blup-1.svg" alt="" class="blup blup-1" id="move-element1">
+    <img src="./img/blup-2.svg" alt="" class="blup blup-2" id="move-element2">
+    <img src="./img/blup-3.svg" alt="" class="blup blup-3" id="move-element3">
+    <div class="bg-section" id="bg-app" @mousemove="checkMousePosition()">
+        <img src="./img/main-image.svg" alt="">
+    </div>
     <div class="notes-section" id="todo-app">
         <div class="notes__user-section">
             <div class="notes__user__data-section">
-                <h2 class="notes__user__data-name">{{user.name}}'s</h2>
+                <h2 class="notes__user__data-name" id="username" @dblclick="editUserName()" v-if="!inputNameActive">
+                    {{user.name}}'s</h2>
+
+                <!-- <label for="username" class="notes__user__data-label" v-if="inputNameActive">Name</label> -->
+                <input type="text" class="notes__user__name-input" :value="user.name" v-if="inputNameActive"
+                    id="userNameInput" @keyup.enter="updateUserName">
                 <h1 class="notes__user__data-title">Todo List</h1>
             </div>
             <div class="notes__user__img-section">
